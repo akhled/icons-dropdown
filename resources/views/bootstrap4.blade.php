@@ -26,7 +26,15 @@
             <div class="dropdown-divider"></div>
 
             <div class="row">
-
+                @foreach ($icons as $group => $items)
+                    @foreach ($items as $icon)
+                        <div class="col">
+                            <button class="btn btn-secondary">
+                                @svg("go-".$icon)
+                            </button>
+                        </div>
+                    @endforeach
+                @endforeach
             </div>
         </div>
     </div>
