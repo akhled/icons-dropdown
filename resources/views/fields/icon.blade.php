@@ -9,15 +9,9 @@
 @endif
 
 @if ($showField)
-    @php
-        // $emptyVal = $options['empty_value'] ? ['' => $options['empty_value']] : null;
-    @endphp
-
-    @livewire('icons-dropdown')
-    {{-- @include(helpBlockPath()) --}}
+    <x-icons-dropdown::bs4 :name="$name" :icon="$options['value'] ?? null" />
 @endif
 
-{{-- @include(errorBlockPath()) --}}
 
 @if ($showLabel && $showField)
     @if ($options['wrapper'] !== false)

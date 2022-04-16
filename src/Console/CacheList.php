@@ -2,6 +2,8 @@
 
 namespace Akhaled\IconsDropdown\Console;
 
+use BladeUI\Icons\Factory;
+use BladeUI\Icons\IconsManifest;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
@@ -13,7 +15,7 @@ class CacheList extends Command
 
     protected $description = 'Cache installed icons list to file';
 
-    public function handle()
+    public function handle(IconsManifest $manifest, Factory $factory)
     {
         $icons = [];
 
