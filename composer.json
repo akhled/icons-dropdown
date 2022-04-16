@@ -26,13 +26,13 @@
     ]
   },
   "suggest": {
-    "actb/blade-github-octicons": "^4.0",
     "kris/laravel-form-builder": "1.40.0",
+    "actb/blade-github-octicons": "^4.0",
     "codeat3/blade-academicons": "^1.0",
     "codeat3/blade-akar-icons": "^1.0",
     "codeat3/blade-ant-design-icons": "^1.0",
-    "davidhsianturi/blade-bootstrap-icons": "*",
-    "mallardduck/blade-boxicons": "*",
+    "davidhsianturi/blade-bootstrap-icons": "^1.0",
+    "mallardduck/blade-boxicons": "^2.0",
     "codeat3/blade-bytesize-icons": "*",
     "codeat3/blade-carbon-icons": "*",
     "codeat3/blade-clarity-icons": "*",

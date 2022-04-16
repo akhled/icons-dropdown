@@ -11,7 +11,7 @@ if (! function_exists('get_icons_list') ) {
      * @param string $key
      * @return array
      */
-    function get_icons_list() {
+    function get_icons_list(): array {
         $factory = app(Factory::class);
         $allSets = $factory->all();
         $manifest = app(IconsManifest::class)->getManifest(array_keys($allSets));
@@ -22,6 +22,6 @@ if (! function_exists('get_icons_list') ) {
             }, Arr::flatten($manifest[$set]));
 
             return $carry;
-        });
+        }) ?? [];
     }
 }
