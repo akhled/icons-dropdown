@@ -14,6 +14,9 @@
     "livewire/livewire": "^2.0",
     "blade-ui-kit/blade-icons": "^1.2"
   },
+  "require-dev": {
+    "kris/laravel-form-builder": "1.50.0"
+  },
   "autoload": {
     "psr-4": {
       "Akhaled\\IconsDropdown\\": "src"
@@ -24,10 +27,10 @@
   },
   "suggest": {
     "actb/blade-github-octicons": "^4.0",
-    "kris/laravel-form-builder": "*",
-    "codeat3/blade-academicons": "*",
-    "codeat3/blade-akar-icons": "*",
-    "codeat3/blade-ant-design-icons": "*",
+    "kris/laravel-form-builder": "1.40.0",
+    "codeat3/blade-academicons": "^1.0",
+    "codeat3/blade-akar-icons": "^1.0",
+    "codeat3/blade-ant-design-icons": "^1.0",
     "davidhsianturi/blade-bootstrap-icons": "*",
     "mallardduck/blade-boxicons": "*",
     "codeat3/blade-bytesize-icons": "*",
@@ -75,7 +78,7 @@
     "codeat3/blade-pixelarticons": "*",
     "codeat3/blade-prime-icons": "*",
     "codeat3/blade-radix-icons": "*",
-    "andreiio/blade-remix-icon": "*",
+    "andreiio/blade-remix-icon": "1.1",
     "codeat3/blade-rpg-awesome-icons": "*",
     "ublabs/blade-simple-icons": "*",
     "codeat3/blade-simple-line-icons": "*",
