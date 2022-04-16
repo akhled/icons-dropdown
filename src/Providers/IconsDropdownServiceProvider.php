@@ -5,7 +5,6 @@ namespace Akhaled\IconsDropdown\Providers;
 use Livewire\Livewire;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
-use Akhaled\IconsDropdown\Console\CacheList;
 use Akhaled\IconsDropdown\Forms\Fields\Icon;
 use Akhaled\IconsDropdown\Http\Livewire\IconsDropdown;
 
@@ -20,21 +19,12 @@ class IconsDropdownServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->registerCommands();
-        } else {
+        if (!$this->app->runningInConsole()) {
             $this->loadViewsFrom(__DIR__.'/../../resources/views', 'icons-dropdown');
 
             $this->registerComponents();
             $this->registerCustomFieldIcon();
         }
-    }
-
-    private function registerCommands()
-    {
-        $this->commands([
-            CacheList::class,
-        ]);
     }
 
     private function registerComponents()
