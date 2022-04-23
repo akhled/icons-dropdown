@@ -34,8 +34,8 @@ class IconsDropdownServiceProvider extends ServiceProvider
 
     private function registerCustomFieldIcon()
     {
-        if (File::exists('vendor/kris/laravel-form-builder')) {
+        // if (File::exists('vendor/kris/laravel-form-builder')) {
             config(['laravel-form-builder.custom_fields.icon' => Icon::class]);
-        }
+        // }
     }
 }
