@@ -3,7 +3,7 @@
 <div class="dropleft">
     <div class="dropdown"
         dir="ltr">
-        <button class="btn btn-primary dropdown-toggle"
+        <button class="btn btn-primary dropdown-toggle {{ $attributes }}"
             type="button"
             data-toggle="dropdown"
             aria-expanded="false">
